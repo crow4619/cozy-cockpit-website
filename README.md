@@ -1,6 +1,6 @@
 # Cozy Cockpit Website
 
-The official static marketing website for **Cozy Cockpit**, a quiet observation adventure from above.
+The official static marketing website for **Cozy Cockpit**, a cozy observation adventure through handcrafted places.
 
 ## Project structure
 
