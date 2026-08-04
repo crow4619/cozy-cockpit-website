@@ -108,9 +108,8 @@ button { font: inherit; }
 
 .site-footer { padding: 34px 0; color: var(--cream); background: var(--slate); }
 .footer-composition { min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
-.developer-credit { min-width: 0; display: flex; align-items: center; gap: 18px; }
+.developer-credit { min-width: 0; display: flex; align-items: center; }
 .developer-credit img { display: block; width: 164px; height: auto; flex: 0 0 auto; }
-.developer-credit p { margin: 0; color: rgba(233, 229, 218, .62); font: 300 8px/1.35 var(--mono); letter-spacing: .13em; text-transform: uppercase; }
 .footer-brand { display: flex; align-items: center; justify-content: flex-end; gap: 36px; }
 .site-footer .wordmark { color: var(--cream); }
 .footer-brand > p { margin: 0; color: rgba(233, 229, 218, .62); font: 300 8px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
@@ -153,7 +152,7 @@ button { font: inherit; }
   .lightbox-close { top: 14px; right: 16px; }
   .site-footer { padding: 30px 0; }
   .footer-composition { min-height: 0; align-items: flex-start; flex-direction: column; gap: 26px; }
-  .developer-credit { width: 100%; gap: 14px; }
+  .developer-credit { width: 100%; }
   .developer-credit img { width: 152px; }
   .footer-brand { width: 100%; justify-content: space-between; gap: 24px; }
 }
