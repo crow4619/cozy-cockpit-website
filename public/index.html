@@ -22,8 +22,8 @@
     <link rel="canonical" href="https://cozycockpit.com/">
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/branding/app-icon-v2.png">
-    <link rel="stylesheet" href="/styles-v4.css">
-    <script src="/script-v3.js" defer></script>
+    <link rel="stylesheet" href="/styles-v5.css">
+    <script src="/script-v4.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -34,18 +34,26 @@
           <img class="wordmark-icon" src="/assets/branding/app-icon-v2.png" width="28" height="28" alt="">
           <span>Cozy Cockpit</span>
         </a>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-          <span class="sr-only">Toggle navigation</span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </button>
-        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-          <a href="#flight-notes">Flight notes</a>
-          <a href="#views">Views</a>
-          <a href="#development">Development</a>
-        </nav>
+        <div class="header-actions">
+          <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+            <a href="#flight-notes">Flight notes</a>
+            <a href="#views">Views</a>
+            <a href="#development">Development</a>
+          </nav>
+          <button class="audio-toggle" type="button" data-audio-toggle aria-pressed="false" aria-label="Play background music">
+            <span class="audio-dot" aria-hidden="true"></span>
+            <span data-audio-label>Music off</span>
+          </button>
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
     </header>
+
+    <audio data-background-audio src="/audio/cozy-cockpit.mp3" autoplay loop preload="metadata"></audio>
 
     <main id="main-content">
       <section class="hero" id="top" aria-labelledby="hero-title">

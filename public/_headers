@@ -5,10 +5,13 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains
 
-/styles-v4.css
+/styles-v5.css
   Cache-Control: public, max-age=31536000, immutable
 
-/script-v3.js
+/script-v4.js
+  Cache-Control: public, max-age=31536000, immutable
+
+/audio/*
   Cache-Control: public, max-age=31536000, immutable
 
 /assets/*
