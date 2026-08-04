@@ -51,9 +51,7 @@ button { font: inherit; }
 .eyebrow { margin-bottom: 32px; color: #f5c58f; }
 .hero-logo { display: block; width: clamp(330px, 42vw, 560px); max-width: 90%; }
 .hero-logo img { display: block; width: 100%; height: auto; }
-.hero-invitation { max-width: 720px; margin: 42px 0 16px; font: 300 clamp(24px, 2.4vw, 34px)/1.25 var(--serif); letter-spacing: -.025em; text-wrap: balance; }
-.hero-status { margin: 0; color: rgba(242, 238, 229, .74); font-size: 12px; line-height: 1.75; }
-.hero-status span { color: rgba(242, 238, 229, .48); }
+.hero-invitation { max-width: 720px; margin: 42px 0 0; font: 300 clamp(24px, 2.4vw, 34px)/1.25 var(--serif); letter-spacing: -.025em; text-wrap: balance; }
 .scroll-note { position: absolute; z-index: 3; right: 34px; bottom: 34px; display: flex; gap: 14px; align-items: center; color: var(--cream); font: 300 9px/1 var(--mono); letter-spacing: .16em; text-decoration: none; text-transform: uppercase; opacity: .62; }
 .scroll-note span { transition: transform .2s; }
 .scroll-note:hover span { transform: translateY(3px); }
@@ -61,12 +59,7 @@ button { font: inherit; }
 .section { padding: var(--section-space) 0; }
 .section-kicker { margin-bottom: 34px; color: #d3a273; }
 .section h2 { margin: 0; font: 300 clamp(56px, 6.4vw, 88px)/.96 var(--serif); letter-spacing: -.048em; text-wrap: balance; }
-.editorial-grid, .development-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(280px, 4fr); gap: clamp(72px, 10vw, 132px); align-items: start; }
-.flight-notes { color: var(--cream); background: linear-gradient(180deg, var(--night) 0%, var(--twilight) 18%, var(--blue-gray) 100%); }
-.flight-copy { max-width: 420px; padding-top: 76px; }
-.flight-copy p { margin: 0; color: var(--muted-light); font-size: 14px; }
-.flight-copy .lead { margin-bottom: 34px; color: var(--cream); font: 300 clamp(27px, 2.25vw, 30px)/1.38 var(--serif); letter-spacing: -.02em; text-wrap: balance; }
-.development-note { margin-top: 58px !important; padding-top: 22px; border-top: 1px solid var(--line-dark); font-size: 11px !important; }
+.development-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(280px, 4fr); gap: clamp(72px, 10vw, 132px); align-items: start; }
 
 .views { color: var(--cream); background: linear-gradient(180deg, var(--blue-gray) 0%, var(--slate) 100%); }
 .views .section-kicker { color: #d3a273; }
@@ -108,11 +101,8 @@ button { font: inherit; }
 
 .site-footer { padding: 34px 0; color: var(--cream); background: var(--slate); }
 .footer-composition { min-height: 52px; display: flex; align-items: center; justify-content: space-between; gap: 48px; }
-.developer-credit { min-width: 0; display: flex; align-items: center; }
-.developer-credit img { display: block; width: 164px; height: auto; flex: 0 0 auto; }
-.footer-brand { display: flex; align-items: center; justify-content: flex-end; gap: 36px; }
 .site-footer .wordmark { color: var(--cream); }
-.footer-brand > p { margin: 0; color: rgba(233, 229, 218, .62); font: 300 8px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; white-space: nowrap; }
+.studio-mark { display: block; width: 164px; height: auto; flex: 0 0 auto; }
 
 :focus-visible { outline: 2px solid var(--amber); outline-offset: 5px; }
 @media (prefers-reduced-motion: reduce) {
@@ -137,8 +127,8 @@ button { font: inherit; }
   .hero-invitation { margin-top: 34px; }
   .scroll-note { right: 18px; bottom: 24px; }
   .section h2 { font-size: clamp(46px, 12.5vw, 62px); }
-  .editorial-grid, .development-grid { grid-template-columns: 1fr; gap: 54px; }
-  .flight-copy, .development-copy { padding-top: 0; }
+  .development-grid { grid-template-columns: 1fr; gap: 54px; }
+  .development-copy { padding-top: 0; }
   .views-heading { display: block; margin-bottom: 50px; }
   .views-heading > p { margin-top: 30px; }
   .gallery { width: var(--wrap); gap: 42px 18px; }
@@ -151,10 +141,8 @@ button { font: inherit; }
   .lightbox-next { grid-column: 2; grid-row: 2; }
   .lightbox-close { top: 14px; right: 16px; }
   .site-footer { padding: 30px 0; }
-  .footer-composition { min-height: 0; align-items: flex-start; flex-direction: column; gap: 26px; }
-  .developer-credit { width: 100%; }
-  .developer-credit img { width: 152px; }
-  .footer-brand { width: 100%; justify-content: space-between; gap: 24px; }
+  .footer-composition { min-height: 0; gap: 24px; }
+  .studio-mark { width: 144px; }
 }
 
 @media (max-width: 640px) {
