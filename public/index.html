@@ -90,20 +90,36 @@
             <p class="section-kicker">From the flight log</p>
             <h2 id="screenshots-title">Views from above</h2>
           </div>
-          <p>First glimpses are on the horizon.</p>
+          <p>Open skies, quiet routes, and new horizons waiting beyond the cockpit glass.</p>
         </div>
-        <div class="gallery wrap" aria-label="Screenshot placeholders">
-          <figure class="shot shot-primary">
-            <div class="shot-art sky-dawn" role="img" aria-label="Screenshot coming soon: a quiet dawn flight"></div>
-            <figcaption><span>Quiet dawns</span><small>Screenshot coming soon</small></figcaption>
+        <div class="gallery wrap" aria-label="Cozy Cockpit screenshots">
+          <figure class="gallery-item gallery-item-wide">
+            <a class="gallery-open" href="/images/screenshots/tropical-island-flight.webp" data-gallery-item data-caption="Island horizons — Caribbean passage" aria-label="View Island horizons full screen">
+              <img src="/images/screenshots/tropical-island-flight.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Airliner flying above tropical islands, turquoise water, boats, and a cloud-lined horizon">
+              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+            </a>
+            <figcaption><span>Island horizons</span><small>Caribbean passage</small></figcaption>
           </figure>
-          <figure class="shot">
-            <div class="shot-art sky-day" role="img" aria-label="Screenshot coming soon: an open sky"></div>
-            <figcaption><span>Open skies</span><small>Screenshot coming soon</small></figcaption>
+          <figure class="gallery-item gallery-item-half">
+            <a class="gallery-open" href="/images/screenshots/cockpit-coastal-approach.webp" data-gallery-item data-caption="Cockpit calm — Coastal cruise" aria-label="View Cockpit calm full screen">
+              <img src="/images/screenshots/cockpit-coastal-approach.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Nighttime cockpit view above a coastal city and bay with instruments glowing cobalt blue">
+              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+            </a>
+            <figcaption><span>Cockpit calm</span><small>Coastal cruise</small></figcaption>
           </figure>
-          <figure class="shot">
-            <div class="shot-art sky-night" role="img" aria-label="Screenshot coming soon: a night journey"></div>
-            <figcaption><span>Night journeys</span><small>Screenshot coming soon</small></figcaption>
+          <figure class="gallery-item gallery-item-half">
+            <a class="gallery-open" href="/images/screenshots/night-route-map.webp" data-gallery-item data-caption="Night route — Above the cloud deck" aria-label="View Night route full screen">
+              <img src="/images/screenshots/night-route-map.webp" width="1710" height="920" loading="lazy" decoding="async" alt="Exterior route view of an airplane flying among blue clouds above a nighttime city grid">
+              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+            </a>
+            <figcaption><span>Night route</span><small>Above the cloud deck</small></figcaption>
+          </figure>
+          <figure class="gallery-item gallery-item-centered">
+            <a class="gallery-open" href="/images/screenshots/night-runway-approach.webp" data-gallery-item data-caption="Final approach — After dark" aria-label="View Final approach full screen">
+              <img src="/images/screenshots/night-runway-approach.webp" width="1480" height="1062" loading="lazy" decoding="async" alt="Aircraft lined up above an illuminated runway under a deep blue night sky">
+              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+            </a>
+            <figcaption><span>Final approach</span><small>After dark</small></figcaption>
           </figure>
         </div>
       </section>
@@ -131,6 +147,16 @@
         </div>
       </section>
     </main>
+
+    <dialog class="lightbox" data-lightbox aria-label="Screenshot viewer">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close screenshot viewer">Close</button>
+      <button class="lightbox-nav lightbox-previous" type="button" data-lightbox-previous aria-label="View previous screenshot">Previous</button>
+      <figure class="lightbox-content">
+        <img data-lightbox-image alt="">
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+      <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="View next screenshot">Next</button>
+    </dialog>
 
     <footer class="site-footer">
       <div class="wrap footer-row">
