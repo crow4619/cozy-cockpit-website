@@ -29,6 +29,7 @@ const lightboxNext = document.querySelector('[data-lightbox-next]');
 
 if (lightbox instanceof HTMLDialogElement && lightboxImage instanceof HTMLImageElement && lightboxCaption) {
   let currentImage = 0;
+  let previouslyFocused = null;
 
   const showImage = (index) => {
     currentImage = (index + galleryItems.length) % galleryItems.length;
@@ -43,8 +44,13 @@ if (lightbox instanceof HTMLDialogElement && lightboxImage instanceof HTMLImageE
   galleryItems.forEach((item, index) => {
     item.addEventListener('click', (event) => {
       event.preventDefault();
+      previouslyFocused = document.activeElement instanceof HTMLElement ? document.activeElement : null;
       showImage(index);
-      if (!lightbox.open) lightbox.showModal();
+      if (!lightbox.open) {
+        document.body.classList.add('lightbox-open');
+        lightbox.showModal();
+        lightboxClose?.focus();
+      }
     });
   });
 
@@ -57,11 +63,40 @@ if (lightbox instanceof HTMLDialogElement && lightboxImage instanceof HTMLImageE
   });
 
   lightbox.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowLeft') showImage(currentImage - 1);
-    if (event.key === 'ArrowRight') showImage(currentImage + 1);
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      lightbox.close();
+      return;
+    }
+
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      showImage(currentImage - 1);
+    }
+    if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      showImage(currentImage + 1);
+    }
+
+    if (event.key === 'Tab') {
+      const controls = [lightboxClose, lightboxPrevious, lightboxNext].filter((control) => control instanceof HTMLElement);
+      const firstControl = controls[0];
+      const lastControl = controls[controls.length - 1];
+
+      if (event.shiftKey && document.activeElement === firstControl) {
+        event.preventDefault();
+        lastControl.focus();
+      } else if (!event.shiftKey && document.activeElement === lastControl) {
+        event.preventDefault();
+        firstControl.focus();
+      }
+    }
   });
 
   lightbox.addEventListener('close', () => {
+    document.body.classList.remove('lightbox-open');
     lightboxImage.removeAttribute('src');
+    previouslyFocused?.focus();
+    previouslyFocused = null;
   });
 }
