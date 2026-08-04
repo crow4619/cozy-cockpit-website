@@ -3,26 +3,26 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Cozy Cockpit — A Relaxing Ambient Flight Game</title>
-    <meta name="description" content="Cozy Cockpit is a relaxing ambient flight and exploration game, currently in development.">
-    <meta name="theme-color" content="#10253d">
+    <title>Cozy Cockpit — Take Your Time Up Here</title>
+    <meta name="description" content="Cozy Cockpit is an ambient flight and exploration game about quiet time in the air and the places that appear below. Currently in early development.">
+    <meta name="theme-color" content="#020c25">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Cozy Cockpit">
     <meta property="og:title" content="Cozy Cockpit">
-    <meta property="og:description" content="A relaxing ambient flight and exploration game.">
+    <meta property="og:description" content="Take your time up here. An ambient flight and exploration game, currently in early development.">
     <meta property="og:url" content="https://cozycockpit.com/">
     <meta property="og:image" content="https://cozycockpit.com/assets/title-screen-reference.png">
     <meta property="og:image:width" content="1672">
     <meta property="og:image:height" content="941">
-    <meta property="og:image:alt" content="Cozy Cockpit title screen above moonlit clouds">
+    <meta property="og:image:alt" content="A moonlit view above the clouds from the cockpit">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Cozy Cockpit">
-    <meta name="twitter:description" content="A relaxing ambient flight and exploration game.">
+    <meta name="twitter:description" content="Take your time up here. An ambient flight and exploration game.">
     <meta name="twitter:image" content="https://cozycockpit.com/assets/title-screen-reference.png">
     <link rel="canonical" href="https://cozycockpit.com/">
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="/styles.css?v=2">
-    <script src="/script.js?v=2" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=3">
+    <script src="/script.js?v=3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -31,7 +31,7 @@
       <div class="nav-shell">
         <a class="wordmark" href="#top" aria-label="Cozy Cockpit home">
           <span class="wordmark-mark" aria-hidden="true"><i></i></span>
-          <span>Cozy Cockpit</span>
+          <span>Cozy Airways</span>
         </a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
           <span class="sr-only">Toggle navigation</span>
@@ -39,10 +39,9 @@
           <span aria-hidden="true"></span>
         </button>
         <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
-          <a href="#about">About</a>
-          <a href="#screenshots">Screenshots</a>
-          <a href="#wishlist">Wishlist</a>
-          <a href="#contact">Contact</a>
+          <a href="#flight-notes">Flight notes</a>
+          <a href="#views">Views</a>
+          <a href="#development">Development</a>
         </nav>
       </div>
     </header>
@@ -54,95 +53,82 @@
           <img src="/assets/figma-asset-1.png" alt="">
         </picture>
         <div class="hero-content wrap">
-          <p class="eyebrow"><span></span> Currently in Development</p>
+          <p class="eyebrow">Cozy Airways</p>
           <h1 id="hero-title" class="sr-only">Cozy Cockpit</h1>
           <picture class="hero-logo" aria-hidden="true">
             <source media="(max-width: 560px)" srcset="/assets/figma-asset-4.png">
             <img src="/assets/figma-asset-2.png" alt="">
           </picture>
-          <p class="tagline">A relaxing ambient flight<br class="desktop-break"> and exploration game.</p>
-          <a class="text-link" href="#about">Begin your journey <span aria-hidden="true">↓</span></a>
+          <p class="hero-invitation">Take your time up here.</p>
+          <p class="hero-status">An ambient flight and exploration game.<br><span>Currently in early development.</span></p>
         </div>
-        <p class="hero-note" aria-hidden="true">Fly slow&nbsp;&nbsp;•&nbsp;&nbsp;Wander far</p>
+        <a class="scroll-note" href="#flight-notes">Continue <span aria-hidden="true">↓</span></a>
       </section>
 
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <div class="wrap two-column">
-          <div>
-            <p class="section-kicker">The journey</p>
-            <h2 id="about-title">No rush.<br>No wrong turn.</h2>
+      <section class="flight-notes section" id="flight-notes" aria-labelledby="flight-notes-title">
+        <div class="wrap editorial-grid">
+          <div class="section-heading">
+            <p class="section-kicker">Flight notes</p>
+            <h2 id="flight-notes-title">The view changes<br>when you slow down.</h2>
           </div>
-          <div class="about-copy">
-            <p class="lead">Settle into the pilot's seat and let the world unfold beneath you.</p>
-            <p>Cozy Cockpit is a peaceful flight and exploration game about quiet moments, open skies, and the joy of choosing your own horizon.</p>
-            <div class="feature-list" aria-label="Game features">
-              <div><span>01</span><p>Atmospheric flight</p></div>
-              <div><span>02</span><p>Unhurried exploration</p></div>
-              <div><span>03</span><p>A world to get lost in</p></div>
-            </div>
+          <div class="flight-copy">
+            <p class="lead">Choose a direction.<br>See what finds you.</p>
+            <p>Cozy Cockpit is about quiet hours in the air and the places that appear below. Some familiar. Some less so.</p>
+            <p class="development-note">The game is still early. Its world is taking shape one flight at a time.</p>
           </div>
         </div>
       </section>
 
-      <section class="screenshots section" id="screenshots" aria-labelledby="screenshots-title">
-        <div class="wrap section-heading-row">
+      <section class="views section" id="views" aria-labelledby="views-title">
+        <div class="wrap views-heading">
           <div>
-            <p class="section-kicker">From the flight log</p>
-            <h2 id="screenshots-title">Views from above</h2>
+            <p class="section-kicker">Out the window</p>
+            <h2 id="views-title">A few places<br>we have passed.</h2>
           </div>
-          <p>Open skies, quiet routes, and new horizons waiting beyond the cockpit glass.</p>
+          <p>There is always something beyond the next cloud.</p>
         </div>
-        <div class="gallery wrap" aria-label="Cozy Cockpit screenshots">
+
+        <div class="gallery" aria-label="Cozy Cockpit screenshots">
           <figure class="gallery-item">
-            <a class="gallery-open" href="/images/screenshots/tropical-island-flight.webp" data-gallery-item data-caption="Island horizons — Caribbean passage" aria-label="View Island horizons full screen">
+            <a class="gallery-open" href="/images/screenshots/tropical-island-flight.webp" data-gallery-item data-caption="Warm water, open sky." aria-label="View tropical island flight full screen">
               <img src="/images/screenshots/tropical-island-flight.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Airliner flying above tropical islands, turquoise water, boats, and a cloud-lined horizon">
-              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+              <span class="gallery-expand" aria-hidden="true">Open image</span>
             </a>
-            <figcaption><span>Island horizons</span><small>Caribbean passage</small></figcaption>
+            <figcaption>Warm water, open sky.</figcaption>
           </figure>
           <figure class="gallery-item">
-            <a class="gallery-open" href="/images/screenshots/cockpit-coastal-approach.webp" data-gallery-item data-caption="Cockpit calm — Coastal cruise" aria-label="View Cockpit calm full screen">
+            <a class="gallery-open" href="/images/screenshots/cockpit-coastal-approach.webp" data-gallery-item data-caption="Approaching the coast." aria-label="View coastal cockpit flight full screen">
               <img src="/images/screenshots/cockpit-coastal-approach.webp" width="1672" height="941" loading="lazy" decoding="async" alt="Nighttime cockpit view above a coastal city and bay with instruments glowing cobalt blue">
-              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+              <span class="gallery-expand" aria-hidden="true">Open image</span>
             </a>
-            <figcaption><span>Cockpit calm</span><small>Coastal cruise</small></figcaption>
+            <figcaption>Approaching the coast.</figcaption>
           </figure>
           <figure class="gallery-item">
-            <a class="gallery-open" href="/images/screenshots/night-route-map.webp" data-gallery-item data-caption="Night route — Above the cloud deck" aria-label="View Night route full screen">
+            <a class="gallery-open" href="/images/screenshots/night-route-map.webp" data-gallery-item data-caption="Lights below." aria-label="View nighttime route full screen">
               <img src="/images/screenshots/night-route-map.webp" width="1710" height="920" loading="lazy" decoding="async" alt="Exterior route view of an airplane flying among blue clouds above a nighttime city grid">
-              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+              <span class="gallery-expand" aria-hidden="true">Open image</span>
             </a>
-            <figcaption><span>Night route</span><small>Above the cloud deck</small></figcaption>
+            <figcaption>Lights below.</figcaption>
           </figure>
           <figure class="gallery-item">
-            <a class="gallery-open" href="/images/screenshots/night-runway-approach.webp" data-gallery-item data-caption="Final approach — After dark" aria-label="View Final approach full screen">
+            <a class="gallery-open" href="/images/screenshots/night-runway-approach.webp" data-gallery-item data-caption="On final." aria-label="View nighttime runway approach full screen">
               <img src="/images/screenshots/night-runway-approach.webp" width="1480" height="1062" loading="lazy" decoding="async" alt="Aircraft lined up above an illuminated runway under a deep blue night sky">
-              <span class="gallery-expand" aria-hidden="true">View full screen</span>
+              <span class="gallery-expand" aria-hidden="true">Open image</span>
             </a>
-            <figcaption><span>Final approach</span><small>After dark</small></figcaption>
+            <figcaption>On final.</figcaption>
           </figure>
         </div>
       </section>
 
-      <section class="wishlist section" id="wishlist" aria-labelledby="wishlist-title">
-        <div class="wishlist-clouds" aria-hidden="true"></div>
-        <div class="wrap wishlist-content">
-          <p class="section-kicker">Destination ahead</p>
-          <h2 id="wishlist-title">Wishlist on<br>Steam</h2>
-          <p>Cozy Cockpit is still taking shape. Follow along and be the first to know when the Steam page is ready.</p>
-          <span class="button-disabled" aria-label="Steam wishlist coming soon">Coming Soon</span>
-        </div>
-      </section>
-
-      <section class="contact section" id="contact" aria-labelledby="contact-title">
-        <div class="wrap two-column">
+      <section class="development section" id="development" aria-labelledby="development-title">
+        <div class="wrap development-grid">
           <div>
-            <p class="section-kicker">Radio check</p>
-            <h2 id="contact-title">Stay in<br>the loop.</h2>
+            <p class="section-kicker">Early development</p>
+            <h2 id="development-title">More when there is<br>more to see.</h2>
           </div>
-          <div class="contact-copy">
-            <p>Development updates and contact details will be announced here soon.</p>
-            <p class="frequency" aria-hidden="true"><span></span> 118.50 &nbsp; COZY RADIO</p>
+          <div class="development-copy">
+            <p>Cozy Cockpit is still being made. The Steam page will open when there is more to share.</p>
+            <p class="departure-status"><span aria-hidden="true"></span> Steam wishlist · Coming later</p>
           </div>
         </div>
       </section>
@@ -162,10 +148,10 @@
       <div class="wrap footer-row">
         <a class="wordmark" href="#top" aria-label="Back to top">
           <span class="wordmark-mark" aria-hidden="true"><i></i></span>
-          <span>Cozy Cockpit</span>
+          <span>Cozy Airways</span>
         </a>
         <p>© <span data-year>2026</span> Cozy Cockpit</p>
-        <p>Made for wandering</p>
+        <p>An ambient flight and exploration game.</p>
       </div>
     </footer>
   </body>
