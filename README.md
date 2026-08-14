@@ -7,7 +7,7 @@ The official static marketing website for **Cozy Cockpit**, a cozy observation a
 All website files live in `public/`:
 
 - `index.html` — page content and metadata
-- `styles-v14.css` — responsive styling and artwork
+- `styles-v15.css` — responsive styling, artwork, and gameplay presentation
 - `script-v3.js` — mobile navigation, screenshot viewer, and current year
 - `favicon.png` — Cozy Cockpit favicon
 - `_headers` — Cloudflare Pages security and cache headers
