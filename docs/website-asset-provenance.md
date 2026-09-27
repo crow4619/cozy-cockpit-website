@@ -22,8 +22,8 @@ The hero is a website-specific recomposition of these source layers. The exact c
 | --- | --- | --- |
 | 1 | [screenshot01 (75:1775)](https://www.figma.com/design/0XBuQIbeqa3bRRWf7TSWkS/Cozy-Cockpit?node-id=75-1775) | `screenshot01-*`, Through the clouds — In-development gameplay |
 | 2 | [screenshot04 (75:1778)](https://www.figma.com/design/0XBuQIbeqa3bRRWf7TSWkS/Cozy-Cockpit?node-id=75-1778) | `screenshot04-*`, Under a moonlit sky — In-development gameplay |
-| 3 | [screenshot03 (75:1777)](https://www.figma.com/design/0XBuQIbeqa3bRRWf7TSWkS/Cozy-Cockpit?node-id=75-1777) | `screenshot03-*`, After dark — In-development gameplay |
-| 4 | [conceptart01 (79:413)](https://www.figma.com/design/0XBuQIbeqa3bRRWf7TSWkS/Cozy-Cockpit?node-id=79-413) | `conceptart01-*`, An island daydream — Concept art |
+| 3 | [Screenshot07 (85:2928)](https://www.figma.com/design/0XBuQIbeqa3bRRWf7TSWkS/Cozy-Cockpit?node-id=85-2928) | `screenshot07-*`, Inside the cockpit — In-development gameplay |
+| 4 | [conceptart01 (79:413)](https://www.figma.com/design/0XBuQIbeqa3bRRWf7TSWkS/Cozy-Cockpit?node-id=79-413) | `conceptart01-*`, Tropical islands — Concept art |
 
 Gallery source dimensions: first three 2556×1439, concept 1672×941. All source image content, including slight source frame bleed, remains intact. WebP quality 83 with 800px previews and full-size viewing links. First three also have 1600px variants. CSS uses natural ratios, never crops gallery imagery. Alt text describes the inspected image content.
 

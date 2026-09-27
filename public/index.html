@@ -23,12 +23,12 @@
     <link rel="icon" href="/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="/assets/branding/app-icon-v2.png">
     <link rel="preload" href="/assets/fonts/rajdhani-semibold-latin.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="stylesheet" href="/styles-v18.css">
-    <script src="/script-v4.js" defer></script>
+    <link rel="stylesheet" href="/styles-v19.css">
+    <script src="/script-v5.js" defer></script>
   </head>
-  <body>
+  <body id="top">
     <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header" id="top">
+    <header class="site-header" inert aria-hidden="true">
       <div class="nav-shell wrap">
         <a class="wordmark" href="#top" aria-label="Cozy Cockpit home"><img src="/assets/campaign/logo-800.webp" width="800" height="194" alt="Cozy Cockpit"></a>
         <nav class="site-nav" aria-label="Primary navigation">
@@ -41,20 +41,19 @@
         <picture class="hero-landscape" aria-hidden="true"><source media="(max-width: 700px)" srcset="/assets/campaign/landscape-1100.webp"><img src="/assets/campaign/landscape-2170.webp" width="2170" height="725" alt="" fetchpriority="high"></picture>
         <picture class="hero-clouds" aria-hidden="true"><source media="(max-width: 700px)" srcset="/assets/campaign/clouds-1100.webp"><img src="/assets/campaign/clouds-2170.webp" width="2170" height="725" alt=""></picture>
         <div class="hero-content wrap">
-          <p class="eyebrow">Welcome aboard Cozy Airways</p>
-          <h1 id="hero-title"><img src="/assets/campaign/logo-1400.webp" srcset="/assets/campaign/logo-800.webp 800w, /assets/campaign/logo-1400.webp 1400w" sizes="(max-width: 700px) 90vw, 52vw" width="1400" height="339" alt="Cozy Cockpit"></h1>
+          <h1 id="hero-title" tabindex="-1"><img src="/assets/campaign/logo-1400.webp" srcset="/assets/campaign/logo-800.webp 800w, /assets/campaign/logo-1400.webp 1400w" sizes="(max-width: 700px) 90vw, 52vw" width="1400" height="339" alt="Cozy Cockpit"></h1>
           <p class="tagline">COZY FLIGHTS. CURIOUS SIGHTS.</p>
-          <p class="hero-description">A cozy observation adventure.<br>Watch the world. Follow your curiosity.</p>
-          <div class="hero-actions"><a class="button button-primary" href="#trailer"><span aria-hidden="true">▶</span> Watch trailer</a><a class="text-link" href="#views">Take a look <span aria-hidden="true">↗</span></a></div>
+          <p class="hero-description">A cozy observation adventure.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#trailer"><span aria-hidden="true">▶</span> Watch trailer</a><a class="text-link" href="#views">Screenshots <span aria-hidden="true">↗</span></a></div>
           <p class="status"><span aria-hidden="true"></span> In development</p>
         </div>
         <img class="hero-aircraft" src="/assets/campaign/aircraft-1600.webp" srcset="/assets/campaign/aircraft-800.webp 800w, /assets/campaign/aircraft-1600.webp 1600w" sizes="(max-width: 700px) 108vw, 66vw" width="1600" height="551" alt="An orange and white Cozy Airways plane flying over a moonlit landscape">
-        <div class="hero-bottom wrap" aria-hidden="true"><span>Settle in. Look a little closer.</span><span>↓</span></div>
+        <div class="hero-bottom wrap" aria-hidden="true"><span>↓</span></div>
       </section>
       <section class="trailer-section section wrap" id="trailer" aria-labelledby="trailer-title">
         <div class="section-heading">
-          <div><p class="section-kicker">The view is the adventure</p><h2 id="trailer-title">Let your curiosity fly.</h2></div>
-          <p class="intro-copy">The plane flies itself. You take in the scenery.<br>Look around, notice the unexpected, and explore<br class="desktop-break"> a world of curious sights from the cockpit.</p>
+          <h2 id="trailer-title">Trailer</h2>
+          <p class="intro-copy">The plane flies itself. You take in the scenery.</p>
         </div>
         <div class="trailer-player" data-trailer>
           <a class="trailer-poster" href="https://www.youtube.com/watch?v=hgC0cigvGh0" data-play-trailer aria-label="Play the Cozy Cockpit gameplay trailer">
@@ -65,7 +64,7 @@
       </section>
       <section class="views section" id="views" aria-labelledby="views-title">
         <div class="wrap">
-          <div class="section-heading"><div><p class="section-kicker">A window into the world</p><h2 id="views-title">Worth a closer look.</h2></div><p class="gallery-note">A few sights from the journey.<br>Select an image to explore.</p></div>
+          <div class="section-heading"><h2 id="views-title">Screenshots</h2><p class="gallery-note">A few sights from the journey.</p></div>
           <div class="gallery" aria-label="Cozy Cockpit screenshots and concept art">
             <figure class="gallery-item">
               <a class="gallery-open" href="/assets/campaign/screenshot01-2556.webp" data-gallery-item data-caption="Through the clouds — In-development gameplay" aria-label="Enlarge through the clouds, in-development gameplay">
@@ -82,24 +81,24 @@
               <figcaption><span><span class="image-number">02</span> Under a moonlit sky</span><span class="image-type">In-development gameplay</span></figcaption>
             </figure>
             <figure class="gallery-item">
-              <a class="gallery-open" href="/assets/campaign/screenshot03-2556.webp" data-gallery-item data-caption="After dark — In-development gameplay" aria-label="Enlarge after dark, in-development gameplay">
-                <img src="/assets/campaign/screenshot03-800.webp" srcset="/assets/campaign/screenshot03-800.webp 800w, /assets/campaign/screenshot03-1600.webp 1600w, /assets/campaign/screenshot03-2556.webp 2556w" sizes="(max-width: 700px) 90vw, 550px" width="2556" height="1439" loading="lazy" decoding="async" alt="Side view of an orange and white aircraft and its contrails above blue clouds under a starry sky">
+              <a class="gallery-open" href="/assets/campaign/screenshot07-2556.webp" data-gallery-item data-caption="Inside the cockpit — In-development gameplay" aria-label="Enlarge inside the cockpit, in-development gameplay">
+                <img src="/assets/campaign/screenshot07-800.webp" srcset="/assets/campaign/screenshot07-800.webp 800w, /assets/campaign/screenshot07-1600.webp 1600w, /assets/campaign/screenshot07-2556.webp 2556w" sizes="(max-width: 700px) 90vw, 550px" width="2556" height="1439" loading="lazy" decoding="async" alt="View from inside the cockpit, with illuminated instrument panels and clouds beneath a starry sky">
                 <span class="gallery-expand" aria-hidden="true">↗</span>
               </a>
-              <figcaption><span><span class="image-number">03</span> After dark</span><span class="image-type">In-development gameplay</span></figcaption>
+              <figcaption><span><span class="image-number">03</span> Inside the cockpit</span><span class="image-type">In-development gameplay</span></figcaption>
             </figure>
             <figure class="gallery-item">
-              <a class="gallery-open" href="/assets/campaign/conceptart01-1672.webp" data-gallery-item data-caption="An island daydream — Concept art" aria-label="Enlarge an island daydream, concept art">
+              <a class="gallery-open" href="/assets/campaign/conceptart01-1672.webp" data-gallery-item data-caption="Tropical islands — Concept art" aria-label="Enlarge tropical islands, concept art">
                 <img src="/assets/campaign/conceptart01-800.webp" srcset="/assets/campaign/conceptart01-800.webp 800w, /assets/campaign/conceptart01-1672.webp 1672w" sizes="(max-width: 700px) 90vw, 550px" width="1672" height="941" loading="lazy" decoding="async" alt="Concept art of an aircraft above turquoise tropical waters, green islands, sailboats, and a cruise ship">
                 <span class="gallery-expand" aria-hidden="true">↗</span>
               </a>
-              <figcaption><span><span class="image-number">04</span> An island daydream</span><span class="image-type">Concept art</span></figcaption>
+              <figcaption><span><span class="image-number">04</span> Tropical islands</span><span class="image-type">Concept art</span></figcaption>
             </figure>
           </div>
         </div>
       </section>
       <section class="community section wrap" id="community" aria-labelledby="community-title">
-        <div><p class="section-kicker">More on the horizon</p><h2 id="community-title">Follow the flight.</h2><p>Cozy Cockpit is in development.<br>Come along for new views and updates from the studio.</p><p class="steam-status">Steam page coming soon</p></div>
+        <div><h2 id="community-title">Follow along</h2><p>Development updates from MR_FUTURE GAMES.</p><p class="steam-status">Steam page coming soon</p></div>
         <nav class="community-links" aria-label="Follow MR_FUTURE GAMES"><a href="https://www.youtube.com/channel/UCboed4JIfjArf-j55Itq0Cg" target="_blank" rel="noopener noreferrer">YouTube <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a href="https://bsky.app/profile/mrfuturegames.bsky.social" target="_blank" rel="noopener noreferrer">Bluesky <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a><a href="https://mrfuturegames.itch.io/" target="_blank" rel="noopener noreferrer">itch.io <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></nav>
       </section>
     </main>

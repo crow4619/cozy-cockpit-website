@@ -43,3 +43,9 @@
 
 /script-v4.js
   Cache-Control: public, max-age=31536000, immutable
+
+/styles-v19.css
+  Cache-Control: public, max-age=31536000, immutable
+
+/script-v5.js
+  Cache-Control: public, max-age=31536000, immutable
