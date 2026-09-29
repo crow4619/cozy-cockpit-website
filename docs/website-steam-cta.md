@@ -21,4 +21,5 @@ Both CTAs are ordinary links to the verified storefront and work without JavaScr
 Desktop1920×1080, laptop1366×900, tablet768×1024, phone390×844, narrow320×740: CTA fit, no horizontal overflow or JavaScript errors, both link destinations, focusability, direct trailer anchor, delayed navigation, and return to top checked. Clicked the actual primary CTA and confirmed it reaches Cozy Cockpit on Steam.
 
 New immutable CSS filename styles-v20.css avoids serving cached styles-v19.css. JavaScript is unchanged. Local rendered evidence and checks are in work/steam-cta/.
-`nIndependent review accepted with no actionable issues: Chromium desktop/tablet/mobile and Firefox/WebKit phone checks passed, including visible focus, CTA/artwork separation, direct trailer anchors, and delayed navigation.
+
+Independent review accepted with no actionable issues: Chromium desktop/tablet/mobile and Firefox/WebKit phone checks passed, including visible focus, CTA/artwork separation, direct trailer anchors, and delayed navigation.
