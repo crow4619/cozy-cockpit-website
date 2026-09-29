@@ -7,7 +7,7 @@ The official static marketing website for **Cozy Cockpit**, a cozy observation a
 All served files live in `public/`:
 
 - `index.html` — campaign composition, content, accessible gallery, trailer fallback, and metadata
-- `styles-v19.css` — responsive art direction and Rajdhani typography
+- `styles-v20.css` — responsive art direction and Rajdhani typography
 - `script-v5.js` — click-to-load trailer, delayed navigation, keyboard screenshot viewer, and current year
 - `assets/campaign/` — optimized official Figma artwork and responsive variants
 - `assets/fonts/` — self-hosted Rajdhani Latin subset and OFL license
@@ -31,7 +31,7 @@ Open `http://localhost:8080`. The root page must be served over HTTP for the You
 - The gallery order is screenshot01, screenshot04, screenshot07, conceptart01. Only the last image is concept art; the first three are labeled in-development gameplay.
 - Selecting a gallery image opens a native dialog. Escape closes it; arrow keys change images; focus returns to the original image link. Without JavaScript, links open the complete original-resolution WebP.
 - The gameplay trailer is `hgC0cigvGh0`. YouTube receives no request until the visitor deliberately selects the local poster. A permanent YouTube link remains available if embedding is blocked. Without JavaScript the poster is a normal YouTube link.
-- Steam app 5251280 was not publicly available at the refresh audit. Keep the honest “Steam page coming soon” status until the real store destination works, then add an actual wishlist link.
+- The verified public Steam storefront is https://store.steampowered.com/app/5251280/Cozy_Cockpit/. “Wishlist on Steam” is the primary hero action and is repeated below the gallery in the community section. The trailer remains a secondary hero action.
 - Brand source details and transforms are recorded in [docs/website-asset-provenance.md](docs/website-asset-provenance.md). The implementation decision record is [docs/website-brand-refresh.md](docs/website-brand-refresh.md).
 
 ## Cloudflare Pages settings
